@@ -22,3 +22,6 @@ def majorityElement(array):
     if actualCount > len(array) // 2:
         return majorityNumber
     return -1
+
+
+# https://bit.ly/3SSpeA3
