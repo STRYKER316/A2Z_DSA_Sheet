@@ -1,9 +1,6 @@
 # O(N) TC | O(1) SC
 
-def moveZeroes(self, nums: List[int]) -> None:
-        """
-        Do not return anything, modify nums in-place instead.
-        """
+def moveZeroes(nums):
         # find the index of first 0
         currentZeroIdx = -1
         for i in range(len(nums)):
