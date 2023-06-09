@@ -13,3 +13,7 @@ def largestElement(array) -> int:
         maxVal = max(num, maxVal)
     
     return maxVal
+
+
+
+# Link: https://bit.ly/3Pld280
