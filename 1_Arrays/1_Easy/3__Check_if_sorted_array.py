@@ -12,3 +12,4 @@ def arraySortedOrNot(self, arr, n):
 
 
 # Link: https://bit.ly/3Ap9U6F
+# Link: https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
