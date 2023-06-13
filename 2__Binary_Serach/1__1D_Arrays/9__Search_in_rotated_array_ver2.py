@@ -1,35 +1,33 @@
-# O(log(n)) TC | O(1) SC -> Average Case
-# O(n/2) TC | O(1) SC -> Worst Case
+# O(log(N)) TC | O(1) SC -> Average Case
+# O(N/2) TC | O(1) SC -> Worst Case
+# N -> Length of array
 
-def Search(n, arr, k):
-    leftIdx, rightIdx = 0, n - 1
+def search(nums, target):
+    leftIdx, rightIdx = 0, len(nums) - 1
     midIdx = 0
 
     while leftIdx <= rightIdx:
         midIdx = (leftIdx + rightIdx) // 2
-
-        left = arr[leftIdx]
-        right = arr[rightIdx]
-        mid = arr[midIdx]
-
-        if arr[midIdx] == k:
-            return 1
-        # check fr duplicate numbers
-        if arr[leftIdx] == arr[midIdx] and arr[midIdx] == arr[rightIdx]:
+        
+        # check if we found target
+        if nums[midIdx] == target:
+            return True
+        # check for all equality case
+        if nums[leftIdx] == nums[midIdx] and nums[midIdx] == nums[rightIdx]:
             leftIdx += 1
             rightIdx -= 1
-        # check if left-half is sorted or not
-        elif arr[leftIdx] <= arr[midIdx]:
-            if arr[leftIdx] <= k and k <= arr[rightIdx]:
+        # check if left half sorted
+        elif nums[leftIdx] <= nums[midIdx]:
+            if nums[leftIdx] <= target and target <= nums[midIdx]:
                 rightIdx = midIdx - 1
             else:   leftIdx = midIdx + 1
-        # right-half is sorted
+        # else right half sorted
         else:
-            if arr[midIdx] <= k and k <= arr[rightIdx]:
+            if nums[midIdx] <= target and target <= nums[rightIdx]:
                 leftIdx = midIdx + 1
             else:   rightIdx = midIdx - 1
     
-    return 0
+    return False
 
 
 
