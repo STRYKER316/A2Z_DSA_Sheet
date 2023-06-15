@@ -23,6 +23,6 @@ def findMin(nums):
 
 
 
-# GFG: https://bit.ly/3Az1OJ3
+# GFG: https://practice.geeksforgeeks.org/problems/minimum-element-in-a-sorted-and-rotated-array3611/1
 # Leetcode: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 # CN: https://www.codingninjas.com/codestudio/problems/rotated-array_1093219

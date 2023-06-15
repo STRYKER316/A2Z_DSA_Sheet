@@ -24,4 +24,4 @@ def ceilingInSortedArray(arr, arrayLen, target):
 
 
 
-# Link: https://www.codingninjas.com/codestudio/problems/ceiling-in-a-sorted-array_1825401
+# CN: https://www.codingninjas.com/codestudio/problems/ceiling-in-a-sorted-array_1825401

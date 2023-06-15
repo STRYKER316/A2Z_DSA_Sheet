@@ -26,6 +26,6 @@ def search(arr, n, k):
 	return ansIdx
 
 
-# GFG: https://bit.ly/3QH471y
+# GFG: https://practice.geeksforgeeks.org/problems/search-in-a-rotated-array4618/1
 # CN: https://www.codingninjas.com/codestudio/problems/search-in-rotated-sorted-array_1082554
 # Leetcode: https://leetcode.com/problems/search-in-rotated-sorted-array/

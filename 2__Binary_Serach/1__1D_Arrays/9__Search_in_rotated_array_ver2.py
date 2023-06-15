@@ -31,6 +31,6 @@ def search(nums, target):
 
 
 
-# GFG: https://bit.ly/3Rm85Nb
+# GFG: https://practice.geeksforgeeks.org/problems/search-in-rotated-array-2/1
 # CN: https://www.codingninjas.com/codestudio/problems/search-in-a-rotated-sorted-array-ii_7449547
 # Leetcode: https://leetcode.com/problems/search-in-rotated-sorted-array-ii/

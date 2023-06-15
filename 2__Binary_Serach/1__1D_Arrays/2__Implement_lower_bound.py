@@ -22,4 +22,4 @@ def lowerBound(arr, length, target) -> int:
 
 
 
-# Link: https://www.codingninjas.com/codestudio/problems/lower-bound_8165382
+# CN: https://www.codingninjas.com/codestudio/problems/lower-bound_8165382

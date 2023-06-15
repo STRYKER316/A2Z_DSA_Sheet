@@ -19,6 +19,6 @@ def searchInsert(nums, target):
 
 
 
-# Link: https://leetcode.com/problems/search-insert-position/
-# Link: https://bit.ly/3pFDbUN
-# Link: https://www.codingninjas.com/codestudio/problems/algorithm-to-find-best-insert-position-in-sorted-array_839813
+# GFG: https://practice.geeksforgeeks.org/problems/search-insert-position-of-k-in-a-sorted-array/1
+# Leetcode: https://leetcode.com/problems/search-insert-position/
+# CN: https://www.codingninjas.com/codestudio/problems/algorithm-to-find-best-insert-position-in-sorted-array_839813

@@ -20,4 +20,4 @@ def floorSqrt(self, x):
 
 
 
-# GFG: https://bit.ly/3JXtGcE
+# GFG: https://practice.geeksforgeeks.org/problems/square-root/0

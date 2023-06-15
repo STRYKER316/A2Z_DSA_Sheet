@@ -16,4 +16,4 @@ def rowWithMax1s(self, arr, n, m):
 
 
 
-# Link: https://bit.ly/3QNDw2W
+# GFG: https://practice.geeksforgeeks.org/problems/row-with-max-1s0023/1

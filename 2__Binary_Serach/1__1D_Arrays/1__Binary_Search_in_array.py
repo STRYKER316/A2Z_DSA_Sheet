@@ -42,5 +42,6 @@ def binarySearchHelper(array, target, leftIdx, rightIdx):
 
 
 
-# Link: https://bit.ly/3QtKBpO
-# Link: https://leetcode.com/problems/binary-search/
+# GFG: https://practice.geeksforgeeks.org/problems/binary-search-1587115620/1
+# Leetcode: https://leetcode.com/problems/binary-search/
+# CN: https://www.codingninjas.com/codestudio/problems/binary-search_972

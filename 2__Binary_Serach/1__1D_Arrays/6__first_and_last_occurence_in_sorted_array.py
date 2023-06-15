@@ -56,6 +56,6 @@ def getLastOccurenceIdx(array, arrayLen, target):
     return lastOccurenceIdx
 
 
-# GFG: https://bit.ly/3QuCFEP
+# GFG: https://practice.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1
 # Leetcode: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 # CN: https://www.codingninjas.com/codestudio/problems/first-and-last-position-of-an-element-in-sorted-array_1082549

@@ -20,6 +20,6 @@ def search(matrix, x):
 
 
 
-# Link: https://www.codingninjas.com/codestudio/problems/search-in-a-row-wise-and-column-wise-sorted-matrix_839811
-# Link: https://bit.ly/3dAwi3Z
-# Link: https://leetcode.com/problems/search-a-2d-matrix-ii/description/
+# GFG: https://practice.geeksforgeeks.org/problems/search-in-a-matrix17201720/1
+# Leetcode: https://leetcode.com/problems/search-a-2d-matrix-ii/description/
+# CN: https://www.codingninjas.com/codestudio/problems/search-in-a-row-wise-and-column-wise-sorted-matrix_839811

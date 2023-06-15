@@ -61,5 +61,5 @@ def getLastOccurenceIdx(array, arrayLen, target):
 
 
 
-# GFG: https://bit.ly/3SVcOqW
+# GFG: https://practice.geeksforgeeks.org/problems/number-of-occurrence2259/1
 # CN: https://www.codingninjas.com/codestudio/problems/occurrence-of-x-in-a-sorted-array_630456

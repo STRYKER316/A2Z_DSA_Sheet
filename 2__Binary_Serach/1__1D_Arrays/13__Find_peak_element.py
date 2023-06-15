@@ -27,5 +27,5 @@ def findPeakElement(nums):
 
 
 
-# GFG: https://bit.ly/3Apsuf3
+# GFG: https://practice.geeksforgeeks.org/problems/peak-element/1
 # Leetcode: https://leetcode.com/problems/find-peak-element/

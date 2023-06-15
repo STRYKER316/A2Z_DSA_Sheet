@@ -21,4 +21,4 @@ def upperBound(arr, target, arrayLen) -> int:
 
 
 
-# Link: https://www.codingninjas.com/codestudio/problems/implement-upper-bound_8165383
+# CN: https://www.codingninjas.com/codestudio/problems/implement-upper-bound_8165383

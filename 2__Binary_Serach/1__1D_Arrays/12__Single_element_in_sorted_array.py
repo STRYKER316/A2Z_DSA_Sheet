@@ -35,6 +35,6 @@ def singleNonDuplicate(nums):
 
 
 
-# GFG: https://bit.ly/3AllLTj
+# GFG: https://practice.geeksforgeeks.org/problems/find-the-element-that-appears-once-in-sorted-array0624/1
 # Leetcode: https://leetcode.com/problems/single-element-in-a-sorted-array/description/
 # CN: https://www.codingninjas.com/codestudio/problems/unique-element-in-sorted-array_1112654
