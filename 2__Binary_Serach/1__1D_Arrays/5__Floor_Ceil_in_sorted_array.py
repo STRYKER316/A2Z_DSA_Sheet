@@ -25,3 +25,4 @@ def ceilingInSortedArray(arr, arrayLen, target):
 
 
 # CN: https://www.codingninjas.com/codestudio/problems/ceiling-in-a-sorted-array_1825401
+# GFG: https://practice.geeksforgeeks.org/problems/ceil-the-floor2802/1

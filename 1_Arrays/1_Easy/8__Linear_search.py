@@ -6,3 +6,6 @@ def linearSearch(array, num):
             return i
     return -1
 
+
+
+# CN: https://www.codingninjas.com/codestudio/problems/linear-search_6922070

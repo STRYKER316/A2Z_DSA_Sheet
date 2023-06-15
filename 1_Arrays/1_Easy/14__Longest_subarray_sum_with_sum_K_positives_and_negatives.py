@@ -26,5 +26,5 @@ def lenOfLongSubarr (arr, k) :
 
 
 
-# Link: https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
-# Link: https://www.codingninjas.com/codestudio/problems/longest-subarray-with-sum-k_5713505
+# GFG: https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+# CN: https://www.codingninjas.com/codestudio/problems/longest-subarray-with-sum-k_5713505

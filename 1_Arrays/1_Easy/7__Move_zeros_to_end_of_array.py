@@ -20,5 +20,6 @@ def moveZeroes(nums):
 
 
 
-# Link: https://bit.ly/3PrGIjT
-# Link: https://leetcode.com/problems/move-zeroes/
+# GFG: https://practice.geeksforgeeks.org/problems/move-all-zeroes-to-end-of-array0751/1
+# Leetcode: https://leetcode.com/problems/move-zeroes/
+# CN: https://www.codingninjas.com/codestudio/problems/ninja-and-the-zero-s_6581958

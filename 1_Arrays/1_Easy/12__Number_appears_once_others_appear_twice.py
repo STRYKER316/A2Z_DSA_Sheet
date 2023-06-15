@@ -9,4 +9,6 @@ def singleNumber(nums):
 
 
 
-# Link: https://leetcode.com/problems/single-number/
+# GFG: https://practice.geeksforgeeks.org/problems/element-appearing-once2552/0
+# Leetcode: https://leetcode.com/problems/single-number/
+# CN: https://www.codingninjas.com/codestudio/problems/find-the-single-element_6680465

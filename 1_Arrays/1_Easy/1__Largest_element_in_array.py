@@ -16,4 +16,5 @@ def largestElement(array) -> int:
 
 
 
-# Link: https://bit.ly/3Pld280
+# GFG: https://practice.geeksforgeeks.org/problems/largest-element-in-array4009/0
+# CN: https://www.codingninjas.com/codestudio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279

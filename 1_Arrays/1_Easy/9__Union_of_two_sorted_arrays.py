@@ -28,4 +28,5 @@ def findUnion(arr1, arr2, len1, len2):
 
 
 
-# Link: https://bit.ly/3Ap7Onp
+# GFG: https://practice.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1
+# CN: https://www.codingninjas.com/codestudio/problems/sorted-array_6613259

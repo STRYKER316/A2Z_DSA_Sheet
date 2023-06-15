@@ -15,4 +15,5 @@ def twoSum(nums, target):
 
 
 
-# Link: https://leetcode.com/problems/two-sum/
+# Leetcode: https://leetcode.com/problems/two-sum/
+# CN: https://www.codingninjas.com/codestudio/problems/reading_6845742

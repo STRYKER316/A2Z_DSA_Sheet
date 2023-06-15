@@ -28,5 +28,6 @@ def maxSubArraySum(arr, N):
 
 
 
-# Link: https://bit.ly/3dzyloY
-# Link: https://leetcode.com/problems/maximum-subarray/
+# GFG: https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/0
+# Leetcode: https://leetcode.com/problems/maximum-subarray/
+# CN: https://www.codingninjas.com/codestudio/problems/maximum-subarray-sum_630526

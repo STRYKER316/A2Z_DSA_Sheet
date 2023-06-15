@@ -24,5 +24,6 @@ def majorityElement(array):
     return -1
 
 
-# Link: https://bit.ly/3SSpeA3
-# Link: https://leetcode.com/problems/majority-element/
+# GFG: https://practice.geeksforgeeks.org/problems/majority-element-1587115620/1
+# Leetcode: https://leetcode.com/problems/majority-element/
+# CN: https://www.codingninjas.com/codestudio/problems/majority-element_6783241

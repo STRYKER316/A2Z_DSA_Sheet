@@ -24,4 +24,6 @@ def reverseArray(arr, start, end):
         right -= 1
 
 
-# Link: https://bit.ly/3dyCKZg
+# GFG: https://practice.geeksforgeeks.org/problems/reversal-algorithm5340/1
+# Leetcode: https://leetcode.com/problems/rotate-array/
+# CN: https://www.codingninjas.com/codestudio/problems/rotate-array_1230543

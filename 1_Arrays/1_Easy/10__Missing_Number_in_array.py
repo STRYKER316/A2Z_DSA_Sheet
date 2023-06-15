@@ -28,5 +28,6 @@ def missingNumber(array, N):
 
 
 
-# Link: https://bit.ly/3A2pKTh
-# Link: https://leetcode.com/problems/missing-number/
+# GFG: https://practice.geeksforgeeks.org/problems/missing-number4257/1
+# Leetcode: https://leetcode.com/problems/missing-number/
+# CN: https://www.codingninjas.com/codestudio/problems/missing-number_6680467

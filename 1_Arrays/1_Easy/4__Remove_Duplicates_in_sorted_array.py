@@ -12,5 +12,6 @@ def removeDuplicates(nums):
 
 
 
-# Link: https://bit.ly/3w7b6ck
-# Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+# GFG: https://practice.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1
+# Leetcode: https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+# CN: https://www.codingninjas.com/codestudio/problems/remove-duplicates-from-sorted-array_1102307

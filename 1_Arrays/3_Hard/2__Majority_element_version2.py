@@ -40,5 +40,5 @@ def majorityElement(array):
 
 
 
-# Link: https://www.codingninjas.com/codestudio/problems/majority-element_6915220
-# Link: https://leetcode.com/problems/majority-element-ii/
+# Leetcode: https://leetcode.com/problems/majority-element-ii/
+# CN: https://www.codingninjas.com/codestudio/problems/majority-element_6915220

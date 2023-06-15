@@ -15,4 +15,5 @@ def print2largest(array, n):
 
 
 
-# Link: https://bit.ly/3pFvBcN
+# GFG: https://practice.geeksforgeeks.org/problems/second-largest3735/1
+# CN: https://www.codingninjas.com/codestudio/problems/ninja-and-the-second-order-elements_6581960

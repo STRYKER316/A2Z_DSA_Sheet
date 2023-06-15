@@ -30,5 +30,6 @@ def swap(array, leftIdx, rightIdx):
 
 
 
-# Link: https://bit.ly/3dsROaZ
-# Link: https://leetcode.com/problems/sort-colors/
+# GFG: https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1
+# Leetcode: https://leetcode.com/problems/sort-colors/
+# CN: https://www.codingninjas.com/codestudio/problems/sort-an-array-of-0s-1s-and-2s_892977

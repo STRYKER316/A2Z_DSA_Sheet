@@ -17,4 +17,5 @@ def findMaxConsecutiveOnes(nums):
 
 
 
-# Link: https://leetcode.com/problems/max-consecutive-ones/
+# Leetcode: https://leetcode.com/problems/max-consecutive-ones/
+# CN: https://www.codingninjas.com/codestudio/problems/maximum-consecutive-ones_3843993

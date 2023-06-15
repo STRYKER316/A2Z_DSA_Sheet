@@ -14,4 +14,5 @@ def leaders(self, A, N):
 
 
 
-# Link: https://bit.ly/3bZqbGc
+# GFG: https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1
+# CN: https://www.codingninjas.com/codestudio/problems/superior-elements_6783446

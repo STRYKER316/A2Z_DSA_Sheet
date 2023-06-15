@@ -12,3 +12,7 @@ def leftRotateOnce(arr):
     arr[arrayLen - 1] = temp
 
     return
+
+
+
+# CN: https://www.codingninjas.com/codestudio/problems/left-rotate-an-array-by-one_5026278

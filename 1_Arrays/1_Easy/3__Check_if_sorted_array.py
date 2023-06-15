@@ -11,5 +11,6 @@ def arraySortedOrNot(self, arr, n):
 
 
 
-# Link: https://bit.ly/3Ap9U6F
-# Link: https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
+# GFG: https://practice.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1
+# Leetcode: https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
+# CN: https://www.codingninjas.com/codestudio/problems/ninja-and-the-sorted-check_6581957
