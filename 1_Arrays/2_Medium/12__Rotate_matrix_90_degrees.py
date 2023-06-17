@@ -42,4 +42,4 @@ def matrixMirrorImage(matrix):
 
 # Leetcode: https://leetcode.com/problems/rotate-image/
 # GFG: https://practice.geeksforgeeks.org/problems/rotate-by-90-degree-1587115621/1
-# CN: https://www.codingninjas.com/codestudio/problems/981260
+# CN: https://www.codingninjas.com/codestudio/problems/rotate-the-matrix_6825090
