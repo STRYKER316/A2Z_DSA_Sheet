@@ -7,11 +7,7 @@ def lenOfLongSubarr (arr, k) :
 
     runningSum = 0
     for i in range(len(arr)):
-        # record the sum till current index
         runningSum += arr[i]
-        if runningSum not in sumTillIndexMap:
-            sumTillIndexMap[runningSum] = i
-
         # case 1
         if runningSum == k:
             currentLength = i + 1
@@ -21,6 +17,10 @@ def lenOfLongSubarr (arr, k) :
         if requiredSum in sumTillIndexMap:
             currentLength = i - sumTillIndexMap[requiredSum]
             maxLengthSubarray = max(maxLengthSubarray, currentLength)
+        
+        # record the sum till current index
+        if runningSum not in sumTillIndexMap:
+            sumTillIndexMap[runningSum] = i
     
     return maxLengthSubarray
 
