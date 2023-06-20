@@ -2,7 +2,7 @@
 
 def maxLen(arr, n):
     prefixSumIndexMap = {}
-    maxLengthSubarray = float('-inf')
+    maxLengthSubarray = 0
     
     runningPrefixSum = 0
     for i in range(n):
@@ -22,9 +22,6 @@ def maxLen(arr, n):
         if runningPrefixSum not in prefixSumIndexMap:
             prefixSumIndexMap[runningPrefixSum] = i
     
-    # check answer validity
-    if maxLengthSubarray == float('-inf'):
-        return 0
     return maxLengthSubarray
 
 
