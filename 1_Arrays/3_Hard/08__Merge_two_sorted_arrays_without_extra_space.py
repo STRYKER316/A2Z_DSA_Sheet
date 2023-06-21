@@ -19,7 +19,7 @@ def merge(arr1, arr2):
 
 
 # --------------- Solution 2 (Gap Method) --------------
-# O() TC | O() SC     [N -> length of array1, M -> Length of array2]
+# O((N + M)log(N + M)) TC | O(1) SC     [N -> length of array1, M -> Length of array2]
 
 def merge(arr1,arr2):
     arrayLen1, arrayLen2 = len(arr1), len(arr2)
