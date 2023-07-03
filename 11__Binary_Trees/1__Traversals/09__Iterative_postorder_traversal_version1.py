@@ -34,4 +34,3 @@ def postOrder(self,node):
 
 
 # GFG: https://practice.geeksforgeeks.org/problems/postorder-traversal-iterative/1
-# Leetcode: https://leetcode.com/problems/binary-tree-postorder-traversal/
