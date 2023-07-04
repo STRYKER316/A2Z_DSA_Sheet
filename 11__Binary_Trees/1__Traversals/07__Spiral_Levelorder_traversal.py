@@ -7,38 +7,29 @@ def zigzagLevelOrder(root):
     if root == None:    return []
     
     spiralLevelOrderTraversalResult = []
-    nodeDeque = deque()
-    nodeDeque.append(root)
+    nodeQueue = deque()
+    nodeQueue.append(root)
+    isReverseDirection = True
     
-    isReverse = False
-    while len(nodeDeque) > 0:
-        currentQueueLength = len(nodeDeque)
-        currentLevelraversal = []
+    while len(nodeQueue) > 0:
+        currentLevelNodes = []
+        currentQueueLength = len(nodeQueue)
         
-        if not isReverse:
-            # traverse the level from left to right
-            for _ in range(currentQueueLength):
-                currentNode = nodeDeque.popleft()
-                currentLevelraversal.append(currentNode.val)
-                # right append the children into the deque; first leftChild, then rightChild
-                if currentNode.left != None:
-                    nodeDeque.append(currentNode.left)
-                if currentNode.right != None:
-                    nodeDeque.append(currentNode.right)
-        else:
-            # traverse the level from right to left
-            for _ in range(currentQueueLength):
-                currentNode = nodeDeque.pop()
-                currentLevelraversal.append(currentNode.val)
-                # left append children into the deque; first rightchild, then leftChild
-                if currentNode.right != None:
-                    nodeDeque.appendleft(currentNode.right)
-                if currentNode.left != None:
-                    nodeDeque.appendleft(currentNode.left)
+        for _ in range(currentQueueLength):
+            currentNode = nodeQueue.popleft()
+            currentLevelNodes.append(currentNode.data)
+            # push the children into stack in (left, right) order
+            if currentNode.left != None:
+                nodeQueue.append(currentNode.left)
+            if currentNode.right != None:
+                nodeQueue.append(currentNode.right)
         
-        spiralLevelOrderTraversalResult.append(currentLevelraversal)
-        # update traverse direction for next level
-        isReverse = not isReverse
+        # check if we need to reverse the result for current level
+        if isReverseDirection:
+            currentLevelNodes.reverse()
+        spiralLevelOrderTraversalResult.extend(currentLevelNodes)
+        # update direction
+        isReverseDirection = not isReverseDirection
     
     return spiralLevelOrderTraversalResult
 
