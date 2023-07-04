@@ -16,6 +16,55 @@ def areIdentical(root1, root2):
 
 
 
+# --------------- Iterative Solution ---------------
+# O(min(N1, N2)) TC | O(min(N1, N2)) SC     [Nx -> Number of Nodes of tree x]
+
+from collections import deque
+
+def isIdentical(root1, root2):
+    # get level order traversal of both the trees
+    levelOrderTraversal1 = getLevelOrderTraversal(root1)
+    levelOrderTraversal2 = getLevelOrderTraversal(root2)
+    
+    # compare the results
+    if len(levelOrderTraversal1) != len(levelOrderTraversal2):
+        return False
+    
+    for i in range(len(levelOrderTraversal1)):
+        if levelOrderTraversal1[i] != levelOrderTraversal2[i]:
+            return False
+    return True
+
+
+# Helper Method
+def getLevelOrderTraversal(root):
+    # edge case
+    if root == None:
+        return [-1]
+    
+    # queue for processing level order
+    nodeQueue = deque()
+    nodeQueue.append(root)
+    # store the traversal result
+    traversalResult = []
+    traversalResult.append(root.data)
+    
+    while len(nodeQueue) > 0:
+        topNode = nodeQueue.popleft()
+        # record and push its left chld into queue, if present
+        if topNode.left != None:
+            traversalResult.append(topNode.left.data)
+            nodeQueue.append(topNode.left)
+        else:   traversalResult.append(-1)
+        # record and push its right chld into queue, if present
+        if topNode.right != None:
+            nodeQueue.append(topNode.right)
+            traversalResult.append(topNode.right.data)
+        else: traversalResult.append(-1)
+    
+    return traversalResult
+
+
 # GFG: https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1
 # Leetcode: https://leetcode.com/problems/same-tree/
 # CN: https://www.codingninjas.com/studio/problems/799364
