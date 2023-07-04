@@ -1,7 +1,7 @@
 # ------------------- Recursive Solution -------------------
-# O(N) TC | O(H) SC     [N -> Number of tree nodes | H -> Height of Tree]
+# O(N) TC | O(H) SC (Recursion Stack)     [N -> Number of tree nodes | H -> Height of Tree]
 
-def height(root):
+def maxDepth(root):
     return getMaxDepth(root)
 
 
@@ -17,8 +17,31 @@ def getMaxDepth(root):
 
 
 # ------------------- Iterative Solution -------------------
-def height(root):
-    pass
+# O(N) TC | O(N) SC     [N -> Number of tree nodes]
+
+from collections import deque
+
+def maxDepth(root):
+    # edge case
+    if root == None:    return 0
+
+    nodeQueue = deque()
+    nodeQueue.append(root)
+    currentLevel = 0
+
+    while len(nodeQueue) > 0:
+        # process the current level of nodes
+        for _ in range(len(nodeQueue)):
+            topNode = nodeQueue.popleft()
+            # push its child nodes into queue
+            if topNode.left != None:
+                nodeQueue.append(topNode.left)
+            if topNode.right != None:
+                nodeQueue.append(topNode.right)
+        # update level for the current processed level
+        currentLevel += 1
+    
+    return currentLevel
 
 
 
