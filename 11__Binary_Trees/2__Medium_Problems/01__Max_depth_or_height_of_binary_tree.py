@@ -2,8 +2,6 @@
 # O(N) TC | O(H) SC     [N -> Number of tree nodes | H -> Height of Tree]
 
 def height(root):
-    if root == None:
-        return 0
     return getMaxDepth(root)
 
 
