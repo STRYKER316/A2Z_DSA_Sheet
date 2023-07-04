@@ -2,17 +2,12 @@
 # O(N) TC | O(H) SC (Recursion Stack)     [N -> Number of tree nodes | H -> Height of Tree]
 
 def maxDepth(root):
-    return getMaxDepth(root)
-
-
-# Helper Recursive Method
-def getMaxDepth(root):
     # base case
     if root == None:
         return 0
     # logic
-    leftSubtreeMaxDepth = getMaxDepth(root.left)
-    rightSubtreeMaxDepth = getMaxDepth(root.right)
+    leftSubtreeMaxDepth = maxDepth(root.left)
+    rightSubtreeMaxDepth = maxDepth(root.right)
     return 1 + max(leftSubtreeMaxDepth, rightSubtreeMaxDepth)
 
 
