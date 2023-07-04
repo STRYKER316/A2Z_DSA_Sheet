@@ -10,7 +10,6 @@ def isBalanced(root):
     rightSubtreeMaxHeight = getMaxHeight(root.right)
     return abs(leftSubtreeMaxHeight - rightSubtreeMaxHeight) <= 1 and isBalanced(root.left) and isBalanced(root.right)
 
-
 # Helper Method
 def getMaxHeight(root):
     # base case
@@ -26,7 +25,34 @@ def getMaxHeight(root):
 # ---------------- Optimal Approach ----------------
 # O(N) TC | O(N) SC   [N -> Number of tree nodes]
 def isBalanced(root):
-    pass
+    # edge case
+    if root == None:    return True
+    
+    treeHeight = geTreeHeightIfBalanced(root)
+    return True if treeHeight != -1 else False
+
+
+# Helper Method
+def geTreeHeightIfBalanced(root):
+    """
+    Function returns height of the tree if the tree is balanced, returns -1 if tree is not balanced
+    """
+    # Base Case
+    if root == None:    return 0
+    
+    # get height of the subtrees, and check for unbalanced tree
+    leftSubtreeHeight = geTreeHeightIfBalanced(root.left)
+    if leftSubtreeHeight == -1:
+        return -1
+    
+    rightSubtreeHeight = geTreeHeightIfBalanced(root.right)
+    if rightSubtreeHeight == -1:
+        return -1
+    
+    if abs(leftSubtreeHeight - rightSubtreeHeight) > 1:
+        return -1
+    
+    return 1 + max(leftSubtreeHeight, rightSubtreeHeight)
 
 
 
