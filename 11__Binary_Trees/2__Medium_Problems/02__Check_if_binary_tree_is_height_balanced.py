@@ -2,21 +2,16 @@
 # O(N^2) TC | O(N) SC   [N -> Number of tree nodes]
 
 def isBalanced(root):
-    return isHeightBalanced(root)
-
-
-# Helper Method 1
-def isHeightBalanced(root):
     # base case
     if root == None:
         return True
     # logic
     leftSubtreeMaxHeight = getMaxHeight(root.left)
     rightSubtreeMaxHeight = getMaxHeight(root.right)
-    return abs(leftSubtreeMaxHeight - rightSubtreeMaxHeight) <= 1 and isHeightBalanced(root.left) and isHeightBalanced(root.right)
+    return abs(leftSubtreeMaxHeight - rightSubtreeMaxHeight) <= 1 and isBalanced(root.left) and isBalanced(root.right)
 
 
-# Helper method 2
+# Helper Method
 def getMaxHeight(root):
     # base case
     if root == None:
