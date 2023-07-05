@@ -1,4 +1,4 @@
-# O(N) TC | O(N) SC     [N -> Number of Treenodes]
+# O(N) TC | O(H) SC     [N -> Number of Treenodes | H -> Height of Tree]
 
 from collections import deque
 
@@ -14,7 +14,6 @@ def postorderTraversal(root):
         # process the top node
         topNode = nodeStack.pop()
         traversalResult.append(topNode.val)
-
         # push left and right children into stack, if there are any
         if topNode.left != None:
             nodeStack.append(topNode.left)
