@@ -58,4 +58,4 @@ def geTreeHeightIfBalanced(root):
 
 # GFG: https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1
 # Leetcode: https://leetcode.com/problems/balanced-binary-tree/
-# CN: https://www.codingninjas.com/studio/problems/975497s
+# CN: https://www.codingninjas.com/studio/problems/975497
