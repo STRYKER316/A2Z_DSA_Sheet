@@ -1,13 +1,9 @@
 # Recursive Solution    [N -> Number of tree nodes]
 # O(N) TC   [Visit all the nodes of the tree once]
-# O(N) SC   [Worst case scenario -> Skewed Tree]
+# O(H) SC   [Recursion Call Stack]
 
 def inorderTraversal(root):
     traversalResult = []
-    # edge case
-    if root == None:
-        return traversalResult
-    
     # functin to populate result of traversal
     traverseInorder(root, traversalResult)
     return traversalResult
@@ -26,5 +22,4 @@ def traverseInorder(root, traversalResult):
 
 
 # GFG: https://practice.geeksforgeeks.org/problems/inorder-traversal/1
-# GFG: https://practice.geeksforgeeks.org/problems/preorder-traversal/1
-# Leetcode: https://leetcode.com/problems/binary-tree-inorder-traversal/description/x
+# CN: https://www.codingninjas.com/studio/problems/inorder-traversal_3839605
