@@ -2,6 +2,30 @@
 
 from collections import deque
 
+# --------------- Version1: Complete Traversal ---------------
+def levelOrder(root):
+    # edge case
+    if root == None:    return []
+    
+    levelOrderTraversalResult = []
+    nodeQueue = deque()
+    nodeQueue.append(root)
+
+    while len(nodeQueue) > 0:
+        # pop the first node and record it
+        topNode = nodeQueue.popleft()
+        levelOrderTraversalResult.append(topNode.val)
+
+        # push its children into queue, if there are any
+        if topNode.left != None:
+            nodeQueue.append(topNode.left)
+        if topNode.right != None:
+            nodeQueue.append(topNode.right)
+
+    return levelOrderTraversalResult
+
+
+# --------------- Version2: Level by Level Traversal ---------------
 def levelOrder(root):
     # edge case
     if root == None:    return []
@@ -15,7 +39,7 @@ def levelOrder(root):
     while len(nodeQueue) > 0:
         currentLevelNodes = []
         currentQueueLength = len(nodeQueue)
-        # iterate through all the nodes in the queue currently and record them
+        # iterate through all the nodes for the current level that are in the queue
         for _ in range(currentQueueLength):
             currentNode = nodeQueue.popleft()
             currentLevelNodes.append(currentNode.val)
@@ -25,7 +49,7 @@ def levelOrder(root):
             if currentNode.right != None:
                 nodeQueue.append(currentNode.right)
         
-        # record the current lvel of nodes
+        # record the nodes of current level
         levelOrderTraversalResult.append(currentLevelNodes)
     
     return levelOrderTraversalResult
