@@ -46,16 +46,14 @@ def getLevelOrderTraversal(root):
     
     while len(nodeQueue) > 0:
         topNode = nodeQueue.popleft()
-        # record and push its left chld into queue, if present
-        if topNode.left != None:
-            traversalResult.append(topNode.left.data)
-            nodeQueue.append(topNode.left)
-        else:   traversalResult.append(-1)
-        # record and push its right chld into queue, if present
-        if topNode.right != None:
-            nodeQueue.append(topNode.right)
-            traversalResult.append(topNode.right.data)
-        else: traversalResult.append(-1)
+        # null node check
+        if topNode == None:
+            traversalResult.append(-1)
+            continue
+        # process the top node and push its children into queue
+        traversalResult.append(topNode.data)
+        nodeQueue.append(topNode.left)
+        nodeQueue.append(topNode.right)
     
     return traversalResult
 
