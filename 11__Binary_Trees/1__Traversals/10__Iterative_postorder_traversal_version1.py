@@ -1,9 +1,8 @@
-# O(N) TC | O(N) SC     [N -> Number of Treenodes]
+# O(N) TC | O(H) SC     [N -> Number of Treenodes | H -> Height of Tree]
 
 from collections import deque
 
-# ---------------- Solution 1 (2 Stacks) ----------------
-def postOrder(self,node):
+def postOrder(node):
     # edge case
     if node == None:
         return []
@@ -16,7 +15,6 @@ def postOrder(self,node):
         # pop the top elements from pushStack and push into popStack
         topNode = pushStack.pop()
         popStack.append(topNode)
-        
         # push its left and right children into pushStack, if they exist
         if topNode.left != None:
             pushStack.append(topNode.left)
