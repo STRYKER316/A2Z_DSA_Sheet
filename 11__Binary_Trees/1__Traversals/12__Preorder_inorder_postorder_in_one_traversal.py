@@ -1,13 +1,13 @@
-# O(N) TC | O(N) SC     [N -> Number of Tree nodes]
+# O(N) TC | O(H) SC     [N -> Number of Tree nodes | H -> Height of Tree]
 
 from collections import deque
 def getTreeTraversal(root):
     # edge case
     if root == None:    return []
 
-    preOrder = []
-    inOrder = []
-    postOrder = []
+    preOrderTraversal = []
+    inOrderTraversal = []
+    postOrderTraversal = []
 
     nodeVisitCountStack = deque()
     nodeVisitCountStack.append((root, 1))
@@ -17,24 +17,25 @@ def getTreeTraversal(root):
         currentNode = stackTopValue[0]
         currentVisitCount = stackTopValue[1]
 
+        # 1st time visit to the node
         if currentVisitCount == 1:
-            preOrder.append(currentNode.data)
-            # mark the node for 2nd visit and push its left children, if present
+            preOrderTraversal.append(currentNode.data)
+            # store the node for 2nd visit and push its left children, if present
             nodeVisitCountStack.append((currentNode, 2))
             if currentNode.left != None:
                 nodeVisitCountStack.append((currentNode.left, 1))
-        
+        # 2nd time visit to the node
         elif currentVisitCount == 2:
-            inOrder.append(currentNode.data)
-            # mark the node for 3rd visit and push its right children, if present
+            inOrderTraversal.append(currentNode.data)
+            # store the node for 3rd visit and push its right children, if present
             nodeVisitCountStack.append((currentNode, 3))
             if currentNode.right != None:
                 nodeVisitCountStack.append((currentNode.right, 1))
-        
+        # 3rd time visit to node
         elif currentVisitCount == 3:
-            postOrder.append(currentNode.data)
+            postOrderTraversal.append(currentNode.data)
 
-    return [inOrder, preOrder, postOrder]
+    return [inOrderTraversal, preOrderTraversal, postOrderTraversal]
 
 
 
