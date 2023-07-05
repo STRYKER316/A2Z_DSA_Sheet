@@ -1,4 +1,4 @@
-# O(N) TC | O(N) SC     [N -> Number of tree nodes]
+# O(N) TC | O(H) SC     [N -> Number of tree nodes | H -> Height of Tree]
 
 from collections import deque
 
@@ -15,7 +15,7 @@ def preorderTraversal(root):
         # pop the top node from stack to process it
         currentNode = nodeStack.pop()
         traversalResult.append(currentNode.val)
-        # check for children and push them into stack
+        # push right child, left child into stack; as stack is LIFO and we want to process left child first
         if currentNode.right != None:
             nodeStack.append(currentNode.right)
         if currentNode.left != None:
