@@ -40,18 +40,18 @@ def geTreeHeightIfBalanced(root):
     # Base Case
     if root == None:    return 0
     
-    # get height of the subtrees, and check for unbalanced tree
+    # get height of the subtrees for current node, and check for unbalanced subtree
     leftSubtreeHeight = geTreeHeightIfBalanced(root.left)
     if leftSubtreeHeight == -1:
         return -1
-    
     rightSubtreeHeight = geTreeHeightIfBalanced(root.right)
     if rightSubtreeHeight == -1:
         return -1
-    
+    # check if the current node itself is height balanced or not
     if abs(leftSubtreeHeight - rightSubtreeHeight) > 1:
         return -1
     
+    # if everything is height balanced, return the max height for the current node
     return 1 + max(leftSubtreeHeight, rightSubtreeHeight)
 
 
