@@ -39,4 +39,4 @@ def getTreeTraversal(root):
 
 
 
-# CN: https://www.codingninjas.com/studio/problems/981269?leftPanelTab=1
+# CN: https://www.codingninjas.com/studio/problems/981269

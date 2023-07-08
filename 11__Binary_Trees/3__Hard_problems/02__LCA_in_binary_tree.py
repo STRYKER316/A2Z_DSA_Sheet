@@ -61,4 +61,4 @@ def findLcaHelper(root, node1, node2):
 
 # Leetcode: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 # GFG: https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
-# CN: https://www.codingninjas.com/studio/problems/lca-of-binary-tree_920541
+# CN: https://www.codingninjas.com/studio/problems/lca-in-a-bst_981280
