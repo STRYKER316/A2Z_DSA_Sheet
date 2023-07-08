@@ -24,10 +24,10 @@ def isIdentical(root1, root2):
     # compare the results
     if len(levelOrderTraversal1) != len(levelOrderTraversal2):
         return False
-    
     for i in range(len(levelOrderTraversal1)):
         if levelOrderTraversal1[i] != levelOrderTraversal2[i]:
             return False
+    
     return True
 
 
@@ -42,7 +42,6 @@ def getLevelOrderTraversal(root):
     nodeQueue.append(root)
     # store the traversal result
     traversalResult = []
-    traversalResult.append(root.data)
     
     while len(nodeQueue) > 0:
         topNode = nodeQueue.popleft()
