@@ -49,4 +49,4 @@ def LeftView(root):
 
 
 # GFG: https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1
-# CN: https://www.codingninjas.com/studio/problems/920519
+# CN: https://www.codingninjas.com/studio/problems/left-view-of-binary-tree_625707

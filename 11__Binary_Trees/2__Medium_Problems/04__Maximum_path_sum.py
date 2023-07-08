@@ -28,3 +28,4 @@ def getMaxPathSum(root, maxPathSum):
 
 # GFG: https://practice.geeksforgeeks.org/problems/maximum-path-sum-from-any-node/1
 # Leetcode: https://leetcode.com/problems/binary-tree-maximum-path-sum/
+# CN: https://www.codingninjas.com/studio/problems/binary-tree-maximum-path-sum_1280142

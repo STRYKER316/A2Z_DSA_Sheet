@@ -23,4 +23,4 @@ def areMirrorImageTrees(root1, root2):
 
 # Leetcode: https://leetcode.com/problems/symmetric-tree/
 # GFG: https://practice.geeksforgeeks.org/problems/symmetric-tree/1
-# CN: https://www.codingninjas.com/studio/problems/630426
+# CN: https://www.codingninjas.com/studio/problems/symmetric-tree_981177

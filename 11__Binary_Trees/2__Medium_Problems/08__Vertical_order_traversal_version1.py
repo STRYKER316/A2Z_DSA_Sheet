@@ -40,4 +40,4 @@ def verticalOrder(root):
 
 
 # GFG: https://practice.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1
-# CN: https://www.codingninjas.com/studio/problems/vertical-order-traversal_920533
+# CN: https://www.codingninjas.com/studio/problems/vertical-order-traversal_3622711
