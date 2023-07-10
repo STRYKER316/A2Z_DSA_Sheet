@@ -1,5 +1,5 @@
 # ---------------- Naive Approach ----------------
-# O(N^2) TC | O(N) SC   [N -> Number of tree nodes]
+# O(N^2) TC | O(H) SC   [N -> Number of tree nodes]
 
 def isBalanced(root):
     # base case
@@ -23,7 +23,7 @@ def getMaxHeight(root):
 
 
 # ---------------- Optimal Approach ----------------
-# O(N) TC | O(N) SC   [N -> Number of tree nodes]
+# O(N) TC | O(H) SC   [N -> Number of tree nodes]
 def isBalanced(root):
     # edge case
     if root == None:    return True
