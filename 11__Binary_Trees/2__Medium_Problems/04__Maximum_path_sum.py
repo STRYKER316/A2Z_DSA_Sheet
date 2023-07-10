@@ -3,11 +3,11 @@
 def maxPathSum(root):
     # reference variable to be passed around during recursive calls
     maxPathSum = [float('-inf')]
-    # following function will return max-sum path through root 
-    # and simultaneously calculate max-sum path through root using root as the pivot point
-    rootThroughPathSum = getMaxPathSum(root, maxPathSum)
+    # following function will return max-sum path through root in one of the two branches 
+    # and simultaneously calculate max-sum path through root while using root as the pivot point
+    getMaxPathSum(root, maxPathSum)
     
-    return max(rootThroughPathSum, maxPathSum[0])
+    return maxPathSum[0]
 
 
 # Helper Method
