@@ -18,12 +18,12 @@ def calculateTreeHeight(root, maxDiameter):
     leftSubtreeHeight = calculateTreeHeight(root.left, maxDiameter)
     rightSubtreeHeight = calculateTreeHeight(root.right, maxDiameter)
     # update the reference variable in-case we find a bigger diameter
-    currentDiameter = leftSubtreeHeight + rightSubtreeHeight + 1
+    currentDiameter = leftSubtreeHeight + rightSubtreeHeight
     maxDiameter[0] = max(currentDiameter, maxDiameter[0])
     
     return 1 + max(leftSubtreeHeight, rightSubtreeHeight)
 
 
-# GFG: https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1
 # Leetcode: https://leetcode.com/problems/diameter-of-binary-tree/
 # CN: https://www.codingninjas.com/studio/problems/920552
+# GFG: https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1
