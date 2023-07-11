@@ -7,7 +7,7 @@ def findCeil(root, x):
     while root != None:
         if root.data == x:
             return root.data
-        # record the root-value, whenever the root-value > x and then search for a smaller value
+        # record the root-value, whenever the root-value > x and then search for a smaller answer
         if root.data > x:
             ceilValue = root.data
             root = root.left
@@ -17,4 +17,4 @@ def findCeil(root, x):
 
 
 
-# CN: CN: https://www.codingninjas.com/studio/problems/ceil-from-bst_920464
+# CN: https://www.codingninjas.com/studio/problems/ceil-from-bst_920464
