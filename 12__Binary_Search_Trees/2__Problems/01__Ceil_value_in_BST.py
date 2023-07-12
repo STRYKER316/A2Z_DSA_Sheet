@@ -1,9 +1,9 @@
-# O(logN) TC | O(1) SC      [N - > Number of Tree nodes]
+# O(H) TC | O(1) SC      [H -> Height of BST]
 
 def findCeil(root, x):
     ceilValue = -1
 
-    # keep searching tillwe run out of possible nodes to search
+    # keep searching till we run out of possible nodes to search
     while root != None:
         if root.data == x:
             return root.data

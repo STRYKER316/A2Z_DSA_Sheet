@@ -1,4 +1,4 @@
-# O(logN) TC | O(1) SC      [N -> NUmber of Tree nodes]
+# O(H) TC | O(1) SC      [H -> Height of BST]
 
 def minVal(root):
     # edge case

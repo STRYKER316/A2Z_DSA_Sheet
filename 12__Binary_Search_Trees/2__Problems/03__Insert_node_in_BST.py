@@ -5,7 +5,7 @@ class TreeNode:
         self.right = right
 
 
-# O(logN) TC | O(1) SC
+# O(H) TC | O(1) SC      [H -> Height of BST]
 def insertIntoBST(root, val):
     # edge case
     if root == None:    return TreeNode(val)
