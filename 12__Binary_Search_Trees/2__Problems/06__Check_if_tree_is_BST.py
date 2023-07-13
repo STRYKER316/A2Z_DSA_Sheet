@@ -1,4 +1,4 @@
-# O(N) TC | O(1) SC
+# O(N) TC | O(H) SC     [N -> Number of tree noes | H -> Height of BST]
 
 from collections import deque
 
