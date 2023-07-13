@@ -1,3 +1,5 @@
+# O(N) TC | O(1) SC     [N -> Length of array]
+
 def isValidBST(inOrder):
     # check if the inOrder array is sorted in increasing fashion or not
     isValid = True
