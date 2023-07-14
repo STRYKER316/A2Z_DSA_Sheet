@@ -8,23 +8,24 @@ class TreeNode:
 
 from collections import deque
 
-class Solution:
-    def findTarget(self, root, k):
-        # instantiate a forward and a backward iterator for the BST
-        leftIterator = BstIterator(root, False)
-        rightIterator = BstIterator(root, True)
+# O(N) TC | O(H) SC     [N -> Number of tree nodes | H -> Height of BST]
 
-        leftVal = leftIterator.next()
-        rightVal = rightIterator.next()
-        while leftVal < rightVal:
-            if leftVal + rightVal == k:
-                return True
-            elif leftVal + rightVal < k:
-                leftVal = leftIterator.next()
-            elif leftVal + rightVal > k:
-                rightVal = rightIterator.next()
-        # out of the loop implies no such pair was foun
-        return False
+def findTarget(self, root, k):
+    # instantiate a forward and a backward iterator for the BST
+    leftIterator = BstIterator(root, False)
+    rightIterator = BstIterator(root, True)
+
+    leftVal = leftIterator.next()
+    rightVal = rightIterator.next()
+    while leftVal < rightVal:
+        if leftVal + rightVal == k:
+            return True
+        elif leftVal + rightVal < k:
+            leftVal = leftIterator.next()
+        elif leftVal + rightVal > k:
+            rightVal = rightIterator.next()
+    # out of the loop implies no such pair was foun
+    return False
 
 
 
