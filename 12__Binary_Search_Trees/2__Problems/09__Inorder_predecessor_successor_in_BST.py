@@ -28,7 +28,7 @@ def predecessorSuccessor(root, key):
     return [predecessor, successor]
 
 
-# --------------- Solution 1 ---------------
+# --------------- Solution 2 ---------------
 # O(N) TC | O(N) SC     [N -> Number of tree nodes]
 
 def predecessorSuccessor(root, key):
